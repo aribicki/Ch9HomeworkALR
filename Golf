@@ -16,15 +16,15 @@ verify(/ious\b/,
        ["how delicious", "spacious room"],
        ["ruinous", "consciousness"]);
 
-verify(/.../,
+verify(/\s[.,;]/,
        ["bad punctuation ."],
        ["escape the dot"]);
 
-verify(/.../,
+verify(/\w{7,}/,
        ["hottentottententen"],
        ["no", "hotten totten tenten"]);
 
-verify(/.../,
+verify(/\b[a-df-z]+\b/i,
        ["red platypus", "wobbling nest"],
        ["earth bed", "learning ape"]);
 
