@@ -34,10 +34,10 @@ function verify(regexp, yes, no) {
   if (regexp.source == "...") return;
   yes.forEach(function(s) {
     if (!regexp.test(s))
-      println("Failure to match '" + s + "'");
+      window.alert("Failure to match '" + s + "'");
   });
   no.forEach(function(s) {
     if (regexp.test(s))
-      println("Unexpected match for '" + s + "'");
+      window.alert("Unexpected match for '" + s + "'");
   });
 }
