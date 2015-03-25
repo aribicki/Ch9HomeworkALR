@@ -1,6 +1,6 @@
 // Fill in the regular expressions
 
-verify(/ca[rt]/,
+verify(/a?/,
        ["my car", "bad cats"],
        ["camper", "high art"]);
 
